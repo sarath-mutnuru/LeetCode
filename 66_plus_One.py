@@ -12,8 +12,10 @@ class Solution:
             digits[j] += 1
             return digits
         digits.append(1)
-        for j in range(len(digits) - 1, 0, -1):
-            digits[j], digits[j-1] = digits[j-1], digits[j]
+        
+        digits.insert(0, 1)
+#         for j in range(len(digits) - 1, 0, -1):
+#             digits[j], digits[j-1] = digits[j-1], digits[j]
         return digits
         
         
